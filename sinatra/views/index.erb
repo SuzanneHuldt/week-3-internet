@@ -1,0 +1,19 @@
+<div class="fun-border">
+  <img src="http://bit.ly/1eze8aE" />.</div>
+<style>
+.fun-border {
+  border: 2px dashed red;
+}
+</style>
+
+<% if @name.nil? %>
+<form action="/named-cat">
+  <div>
+      <input type="text" name="name">
+    </div>
+    <div>
+        <input type="submit" value="Submit">
+      </div>
+<%end%>
+
+<h1> My name is <%= @name %> </h1>
